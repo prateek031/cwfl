@@ -19,7 +19,7 @@ router.post('/calculate-difference', (req, res) => {
     const { timestamps } = req.body;
     const { timestamp1, timestamp2 } = timestamps;
 
-    const format = 'DD-MM-YYYY HH:mm:ss';
+    const format = 'DD:MM:YYYY HH:mm:ss';
     const time1 = moment(timestamp1, format);
     const time2 = moment(timestamp2, format);
 
